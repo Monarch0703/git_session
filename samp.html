@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #f9fafc 0%, #e3e8f0 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0 20px 0;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px #e0e7ef;
+            position: relative;
+        }
+        .header-graphic {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .blog-title {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+        .blog-desc {
+            color: #718096;
+            font-size: 1.1em;
+            margin: 0;
+        }
+        .post {
+            background: #fff;
+            padding: 24px 28px;
+            margin-bottom: 28px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #e2e8f0;
+            transition: box-shadow 0.2s;
+        }
+        .post:hover {
+            box-shadow: 0 6px 24px #cbd5e1;
+        }
+        .post-title {
+            color: #374151;
+            font-size: 1.5em;
+            margin: 0 0 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .post-icon {
+            width: 28px;
+            height: 28px;
+            vertical-align: middle;
+        }
+        .post-date {
+            color: #a0aec0;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+        .post-content {
+            color: #4a5568;
+            font-size: 1.08em;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- Blog SVG Graphic -->
+            <svg class="header-graphic" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="32" fill="#4299e1"/>
+                <rect x="18" y="22" width="28" height="20" rx="4" fill="#fff"/>
+                <rect x="22" y="26" width="20" height="3" rx="1.5" fill="#bee3f8"/>
+                <rect x="22" y="32" width="14" height="3" rx="1.5" fill="#bee3f8"/>
+            </svg>
+            <h1 class="blog-title">My Simple Blog</h1>
+            <p class="blog-desc">Welcome to my blog! Here are my latest posts.</p>
+        </header>
+        <article class="post">
+            <h2 class="post-title">
+                <!-- Post SVG Icon -->
+                <svg class="post-icon" viewBox="0 0 24 24" fill="none">
+                    <rect x="4" y="6" width="16" height="12" rx="2" fill="#63b3ed"/>
+                    <rect x="7" y="9" width="10" height="2" rx="1" fill="#fff"/>
+                    <rect x="7" y="13" width="6" height="2" rx="1" fill="#fff"/>
+                </svg>
+                First Blog Post
+            </h2>
+            <div class="post-date">June 10, 2024</div>
+            <div class="post-content">
+                This is my first blog post. I'm excited to start sharing my thoughts and experiences here!
+            </div>
+        </article>
+        <article class="post">
+            <h2 class="post-title">
+                <svg class="post-icon" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" fill="#68d391"/>
+                    <rect x="8" y="11" width="8" height="2" rx="1" fill="#fff"/>
+                </svg>
+                Another Day, Another Post
+            </h2>
+            <div class="post-date">June 11, 2024</div>
+            <div class="post-content">
+                Today I learned how to create a simple blog page using only HTML. It's easy and fun!
+            </div>
+        </article>
+    </div>
+</body>
+</html>
