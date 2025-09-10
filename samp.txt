@@ -1,3 +1,3 @@
 Nithiish!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 new file in git_session
-edit-1: hiii
+edit-2: deleted edit-1
